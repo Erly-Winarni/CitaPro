@@ -10,10 +10,6 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); } 
-        }
         .tab-content {
             display: none;
         }
@@ -348,39 +344,31 @@
     </nav>
     
     <script>
-        // Function to handle tab switching
         function showTab(tabId) {
-            // Hide all tab contents
             const contents = document.querySelectorAll('.tab-content');
             contents.forEach(content => {
                 content.classList.remove('active');
             });
 
-            // Remove active state from all nav links
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => {
                 link.classList.remove('active');
             });
 
-            // Show the selected tab content
             const selectedTab = document.getElementById(tabId);
             if (selectedTab) {
                 selectedTab.classList.add('active');
             }
 
-            // Set active state on the corresponding nav link
             const activeLink = document.getElementById(`nav-${tabId}`);
             if (activeLink) {
                 activeLink.classList.add('active');
             }
         }
-
-        // Set initial active tab on page load
         document.addEventListener('DOMContentLoaded', () => {
-            showTab('dashboard'); // Dashboard is the default view
+            showTab('dashboard'); 
         });
     </script>
-
 </body>
-
 </html>
+
