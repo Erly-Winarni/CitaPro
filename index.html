@@ -14,16 +14,6 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); } 
         }
-        .float-animation {
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
-            50% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); }
-        }
-        .pulse-glow {
-            animation: pulse-glow 2s ease-in-out infinite;
-        }
         .tab-content {
             display: none;
         }
@@ -53,7 +43,6 @@
     </header>
 
     <div class="container mx-auto px-6 py-8">
-        
         <div id="dashboard" class="tab-content active">
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-extrabold mb-2 bg-gradient-to-r from-red-600 via-yellow-600 to-orange-600 bg-clip-text text-transparent">
@@ -96,10 +85,10 @@
                     </div>
                 </div>
 
-                <div class="bg-red-50 border border-red-400 rounded-xl p-5 shadow-lg pulse-glow">
+                <div class="bg-red-50 border border-red-400 rounded-xl p-5 shadow-lg">
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="text-xl font-bold text-red-700">Level 2: Global Ready</h3>
-                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold animate-pulse">AKTIF</span>
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">AKTIF</span>
                     </div>
                     <p class="text-sm text-gray-600 mb-3">Daya Saing Global & Literasi Fiskal.</p>
                     <div class="mt-3">
@@ -113,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-100 border border-gray-300 rounded-xl p-5 opacity-70">
+                <div class="bg-gray-300 border border-gray-300 rounded-xl p-5 opacity-70">
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="text-xl font-bold text-gray-500">Level 3: Sustainable Pro</h3>
                         <span class="bg-gray-400 text-white px-3 py-1 rounded-full text-xs font-semibold">TERKUNCI 🔒</span>
@@ -164,10 +153,10 @@
                 <p class="text-gray-600 text-sm">Tingkatkan keterampilan Anda di setiap level.</p>
             </div>
 
-            <div class="bg-white border border-red-400 rounded-xl p-5 shadow-lg mb-6 pulse-glow">
+            <div class="bg-white border border-red-400 rounded-xl p-5 shadow-lg mb-6">
                 <div class="flex items-center justify-between mb-3">
                     <h3 class="text-xl font-bold text-red-700">Global Market Strategy</h3>
-                    <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold animate-pulse">Sedang Belajar</span>
+                    <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Sedang Belajar</span>
                 </div>
                 <div class="mb-4">
                     <div class="flex justify-between text-sm text-gray-600 mb-1">
@@ -393,4 +382,5 @@
     </script>
 
 </body>
+
 </html>
